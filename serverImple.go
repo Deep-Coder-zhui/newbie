@@ -37,7 +37,7 @@ func handleFunc (w http.ResponseWriter, r *http.Request) {
 		//Method 代表指定的 http 方法
 		switch r.Method {
 			case "GET":
-				// 将表单写入到w中且修改访问标记
+				// 将表单写入到w中
 				io.WriteString(w, form)
 			case "POST":
 				name = r.PostFormValue("name")
